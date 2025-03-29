@@ -1,0 +1,32 @@
+/* print.css */
+
+@media print {
+  body * {
+    margin: 0;
+    background-color: tomato !important;
+    /* display: none; */
+  }
+
+  #template,
+  #template * {
+    width: 4in;
+    height: 6in;
+    position: relative;
+    margin: 0;
+    display: block;
+  }
+
+  #template #tempImg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Force styles for print */
+  #template #qrImg {
+    position: absolute !important;
+    width: 1.4in !important;
+    height: 1.4in !important;
+    top: 0.2in !important;
+    right: 0.2in !important;
+  }
+}
